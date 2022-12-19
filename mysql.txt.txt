@@ -73,3 +73,14 @@ mysql> SELECT * FROM employee_payroll;
 +----+---------+--------+------------+
 3 rows in set (0.01 sec)
 
+UC5-> Retrieve salarybased on date of joining
+
+mysql> select * from employee_payroll
+    -> where start Between Cast('2019-1-1' As Date) and Date(now());
++----+--------+--------+------------+
+| id | name   | salary | start      |
++----+--------+--------+------------+
+|  1 | Bill   | 100000 | 2020-01-01 |
+|  3 | Charly | 500000 | 2019-01-01 |
++----+--------+--------+------------+
+2 rows in set (0.01 sec)
