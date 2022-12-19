@@ -35,3 +35,28 @@ mysql> desc employee_payroll;
 | start  | date         | NO   |     | NULL    |                |
 +--------+--------------+------+-----+---------+----------------+
 4 rows in set (0.02 sec)
+
+UC3-> CRUD Operation
+
+mysql> INSERT INTO employee_payroll
+    -> (
+    -> name, salary, start)
+    -> values
+    -> ('Bill', '100000','2020-1-1')
+    -> ;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> INSERT INTO employee_payroll
+    -> (name, salary, start)
+    -> values
+    -> ('Terissa', '400000','2018-1-1')
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO employee_payroll
+    -> (name, salary, start)
+    -> values
+    -> ('Charly', '500000','2019-1-1')
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
