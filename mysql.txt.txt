@@ -60,3 +60,16 @@ mysql> INSERT INTO employee_payroll
     -> ;
 Query OK, 1 row affected (0.01 sec)
 
+
+UC4-> Retreive data 
+
+mysql> SELECT * FROM employee_payroll;
++----+---------+--------+------------+
+| id | name    | salary | start      |
++----+---------+--------+------------+
+|  1 | Bill    | 100000 | 2020-01-01 |
+|  2 | Terissa | 400000 | 2018-01-01 |
+|  3 | Charly  | 500000 | 2019-01-01 |
++----+---------+--------+------------+
+3 rows in set (0.01 sec)
+
